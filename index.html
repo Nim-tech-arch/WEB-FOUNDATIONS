@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio v1</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Your Name</h1>
+        <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
     </header>
     <nav>
         <ul>
@@ -24,16 +26,53 @@
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <ul>
-                <li>Python Project 1: A data analysis tool</li>
-                <li>Python Project 2: A web scraper application</li>
-                <li>Python Project 3: A machine learning model</li>
-                <li>Python Project 4: A command-line utility</li>
+            <button id="add-project-btn" class="add-project-btn">+ Add New Project</button>
+            <ul id="projects-list">
+                <li class="project-item">
+                    <h3>Python Project 1</h3>
+                    <p>A data analysis tool built with Python and pandas for processing large datasets.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                    <button class="project-btn" data-modal="project-modal-1">View Details</button>
+                </li>
+                <li class="project-item">
+                    <h3>Python Project 2</h3>
+                    <p>A web scraper application that collects data from multiple sources automatically.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">BeautifulSoup</span>
+                        <span class="tech-tag">Requests</span>
+                    </div>
+                    <button class="project-btn" data-modal="project-modal-2">View Details</button>
+                </li>
+                <li class="project-item">
+                    <h3>Python Project 3</h3>
+                    <p>A machine learning model for predictive analytics using scikit-learn.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">TensorFlow</span>
+                    </div>
+                    <button class="project-btn" data-modal="project-modal-3">View Details</button>
+                </li>
+                <li class="project-item">
+                    <h3>Python Project 4</h3>
+                    <p>A command-line utility for automating repetitive development tasks.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Click</span>
+                        <span class="tech-tag">Shell</span>
+                    </div>
+                    <button class="project-btn" data-modal="project-modal-4">View Details</button>
+                </li>
             </ul>
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <form action="#" method="post">
+            <form id="contact-form" action="#" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <br>
@@ -50,5 +89,75 @@
     <footer>
         <p>&copy; 2026 Your Name. All rights reserved.</p>
     </footer>
+
+    <!-- Project Detail Modals -->
+    <div id="project-modal-1" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Python Project 1</h2>
+            <p><strong>Description:</strong> A comprehensive data analysis tool built with Python and pandas for processing large datasets efficiently.</p>
+            <p><strong>Technologies:</strong> Python, Pandas, NumPy, Matplotlib</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Data cleaning and preprocessing</li>
+                <li>Statistical analysis</li>
+                <li>Data visualization</li>
+                <li>Export functionality</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="#" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+
+    <div id="project-modal-2" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Python Project 2</h2>
+            <p><strong>Description:</strong> A robust web scraper application that collects data from multiple sources automatically with error handling.</p>
+            <p><strong>Technologies:</strong> Python, BeautifulSoup, Requests, Selenium</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Multi-site scraping</li>
+                <li>Error handling and retries</li>
+                <li>Data storage (JSON/CSV)</li>
+                <li>Rate limiting</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="#" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+
+    <div id="project-modal-3" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Python Project 3</h2>
+            <p><strong>Description:</strong> A machine learning model for predictive analytics using scikit-learn with TensorFlow integration.</p>
+            <p><strong>Technologies:</strong> Python, Scikit-learn, TensorFlow, Pandas</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Multiple ML algorithms</li>
+                <li>Model evaluation metrics</li>
+                <li>Data preprocessing pipeline</li>
+                <li>Model serialization</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="#" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+
+    <div id="project-modal-4" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Python Project 4</h2>
+            <p><strong>Description:</strong> A command-line utility for automating repetitive development tasks with a clean CLI interface.</p>
+            <p><strong>Technologies:</strong> Python, Click, Shell scripting</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Project scaffolding</li>
+                <li>Code generation</li>
+                <li>Batch file operations</li>
+                <li>Configuration management</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="#" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+
 </body>
 </html>
