@@ -49,6 +49,15 @@ A responsive HTML/CSS/JavaScript developer portfolio showcasing personal informa
    http://localhost:8000
    ```
 
+## 🧰 Troubleshooting
+- If the site cannot be reached, verify the local server is still running in the terminal.
+- Ensure no other process is using port `8000`.
+- If needed, stop the server and restart it with:
+  ```bash
+  python -m http.server 8000
+  ```
+- Then refresh the browser.
+
 ## 📁 Project Structure
 
 ```
