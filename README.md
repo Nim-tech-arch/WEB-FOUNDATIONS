@@ -1,3 +1,5 @@
+<img width="1366" height="768" alt="Screenshot (114)" src="https://github.com/user-attachments/assets/1ffd5af4-82f5-488e-a73f-fbef45ffdf95" />
+<img width="1366" height="768" alt="Screenshot (114)" src="https://github.com/user-attachments/assets/ab150ef6-bad5-45bd-81aa-137406195044" />
 # Developer Portfolio v1
 
 A responsive HTML/CSS/JavaScript developer portfolio showcasing personal information, projects, and contact details with interactive features.
